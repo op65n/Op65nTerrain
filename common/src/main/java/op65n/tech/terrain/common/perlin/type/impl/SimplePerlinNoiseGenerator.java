@@ -147,13 +147,10 @@ public final class SimplePerlinNoiseGenerator extends NoiseGenerator {
         final int BB = perm[B + 1] + Z;
 
         return Math.lerp(fZ, Math.lerp(fY, Math.lerp(fX, Math.grad(perm[AA], x, y, z),
-                Math.grad(perm[BA], x - 1, y, z)),
-                Math.lerp(fX, Math.grad(perm[AB], x, y - 1, z),
-                        Math.grad(perm[BB], x - 1, y - 1, z))),
-                Math.lerp(fY, Math.lerp(fX, Math.grad(perm[AA + 1], x, y, z - 1),
-                        Math.grad(perm[BA + 1], x - 1, y, z - 1)),
-                        Math.lerp(fX, Math.grad(perm[AB + 1], x, y - 1, z - 1),
-                                Math.grad(perm[BB + 1], x - 1, y - 1, z - 1))));
+                Math.grad(perm[BA], x - 1, y, z)), Math.lerp(fX, Math.grad(perm[AB], x, y - 1, z),
+                Math.grad(perm[BB], x - 1, y - 1, z))), Math.lerp(fY, Math.lerp(fX, Math.grad(perm[AA + 1], x, y, z - 1),
+                Math.grad(perm[BA + 1], x - 1, y, z - 1)),
+                Math.lerp(fX, Math.grad(perm[AB + 1], x, y - 1, z - 1), Math.grad(perm[BB + 1], x - 1, y - 1, z - 1))));
     }
 
     /**
