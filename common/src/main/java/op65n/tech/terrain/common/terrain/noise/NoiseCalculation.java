@@ -37,8 +37,8 @@ public final class NoiseCalculation {
         for (final TerrainAdjustment adjustment : this.adjustments) {
             final NoiseGenerator generator = adjustment.getGenerator(this.type, this.seed);
 
-            double lacunarity = adjustment.getLacunarity();
-            double persistence = adjustment.getPersistence();
+            final double lacunarity = adjustment.getLacunarity();
+            final double persistence = adjustment.getPersistence();
 
             final double perlin = generator.noise(this.x, this.z, adjustment.getOctaves(), lacunarity, persistence, false);
 
@@ -54,7 +54,8 @@ public final class NoiseCalculation {
             noise = this.maxHeight;
         }
 
-        return (int) noise * this.seaLevel + this.medianLevel;
+        return (int) noise;
+        //return (int) noise * this.seaLevel + this.medianLevel;
     }
 
 }

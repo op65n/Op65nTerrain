@@ -1,7 +1,6 @@
 package op65n.tech.terrain.bukkit.world;
 
 import op65n.tech.terrain.bukkit.util.ChunkFile;
-import op65n.tech.terrain.bukkit.util.Task;
 import op65n.tech.terrain.common.perlin.NoiseType;
 import op65n.tech.terrain.common.terrain.TerrainAdjustment;
 import op65n.tech.terrain.common.terrain.noise.NoiseCalculation;
@@ -30,8 +29,6 @@ public final class WorldGenerator extends ChunkGenerator {
     public @NotNull ChunkData generateChunkData(@NotNull final World world, @NotNull final Random random, final int chunkX, final int chunkZ, @NotNull final BiomeGrid biome) {
         final ChunkData data = createChunkData(world);
 
-        final ChunkFile chunkFile = new ChunkFile();
-
         for (int z = 0; z < 16; z++) {
             for (int x = 0; x < 16; x++) {
                 final int coordinateX = chunkX >> 4 + x;
@@ -47,12 +44,10 @@ public final class WorldGenerator extends ChunkGenerator {
                 generateBedrock(data, x, z);
                 generateTerrain(data, x, height, z);
                 generateSeaLevel(data, x, z);
-
-                chunkFile.assignData(x, height, z);
             }
         }
 
-        Task.async(() -> chunkFile.saveData(chunkX, chunkZ));
+        ChunkFile.assignData(chunkX, chunkZ, data);
 
         return data;
     }
