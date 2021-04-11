@@ -6,5 +6,5 @@ op65n/tech/terrain/bukkit/util/ChunkFile.java
  op65n.tech.terrain.bukkit.util.ChunkFile
  op65n.tech.terrain.bukkit.util.ChunkFile$ChunkHolder
  op65n.tech.terrain.bukkit.util.ChunkFile$LocationHolder
-op65n/tech/terrain/bukkit/world/setting/file/RetrievalType.java
- op65n.tech.terrain.bukkit.world.setting.file.RetrievalType
+op65n/tech/terrain/bukkit/world/WorldGenerator.java
+ op65n.tech.terrain.bukkit.world.WorldGenerator

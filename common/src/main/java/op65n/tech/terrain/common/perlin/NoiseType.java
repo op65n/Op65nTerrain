@@ -10,11 +10,13 @@ public enum NoiseType {
     SIMPLE(), IMPROVED(), ORIGINAL();
 
     public static NoiseGenerator getTypeFor(final NoiseType type, final long seed) {
-        return switch (type) {
-            case SIMPLE -> new SimplePerlinNoiseGenerator(seed);
-            case IMPROVED -> new ImprovedPerlinNoiseGenerator(seed);
-            case ORIGINAL -> null;
-        };
+        switch (type) {
+            case SIMPLE: return new SimplePerlinNoiseGenerator(seed);
+            case IMPROVED: return new ImprovedPerlinNoiseGenerator(seed);
+            case ORIGINAL: return null;
+        }
+
+        return null;
     }
 
 }
