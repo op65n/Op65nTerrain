@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'op65n.tech.terrain'
+version '1.0.0-PreAlpha'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+
+dependencies {
+    compile name: 'jaylib'
+    compile project(':common')
+}
