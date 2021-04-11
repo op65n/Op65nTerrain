@@ -35,7 +35,7 @@ public final class WorldGenerator extends ChunkGenerator {
                 final int coordinateZ = chunkZ >> 4 + z;
 
                 final NoiseCalculation calculation = new NoiseCalculation(
-                        coordinateX, coordinateZ, world.getMaxHeight(), MEDIAN_LEVEL, SEA_LEVEL, world.getSeed(), NoiseType.IMPROVED,
+                        coordinateX, coordinateZ, world.getMaxHeight(), world.getSeed(), NoiseType.IMPROVED,
                         elevation, detail, rough
                 );
 

@@ -61,7 +61,7 @@ public final class TerrainAdjustment {
         private double persistence = 0.5;
         private double scale = 50;
 
-        private int octaves = 4;
+        private int octaves = 3;
 
         private int lacunarityPow = 0;
         private int persistencePow = 0;

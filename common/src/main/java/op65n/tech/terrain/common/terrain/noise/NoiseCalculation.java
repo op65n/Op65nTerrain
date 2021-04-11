@@ -13,19 +13,15 @@ public final class NoiseCalculation {
     private final int x;
     private final int z;
     private final int maxHeight;
-    private final int medianLevel;
-    private final int seaLevel;
     private final long seed;
     private final NoiseType type;
     private final Set<TerrainAdjustment> adjustments = new HashSet<>();
 
-    public NoiseCalculation(final int x, final int z, final int maxHeight, final int medianLevel, final int seaLevel,
+    public NoiseCalculation(final int x, final int z, final int maxHeight,
                             final long seed, final NoiseType type, final TerrainAdjustment... adjustments) {
         this.x = x;
         this.z = z;
         this.maxHeight = maxHeight;
-        this.medianLevel = medianLevel;
-        this.seaLevel = seaLevel;
         this.seed = seed;
         this.type = type;
         this.adjustments.addAll(Arrays.asList(adjustments));
@@ -55,7 +51,6 @@ public final class NoiseCalculation {
         }
 
         return (int) noise;
-        //return (int) noise * this.seaLevel + this.medianLevel;
     }
 
 }

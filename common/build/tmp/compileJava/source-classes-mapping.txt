@@ -1,18 +1,20 @@
-op65n/tech/terrain/common/terrain/TerrainAdjustment.java
- op65n.tech.terrain.common.terrain.TerrainAdjustment
- op65n.tech.terrain.common.terrain.TerrainAdjustment$AdditionType
- op65n.tech.terrain.common.terrain.TerrainAdjustment$AdjustmentBuilder
+op65n/tech/terrain/common/perlin/type/NoiseGenerator.java
+ op65n.tech.terrain.common.perlin.type.NoiseGenerator
 op65n/tech/terrain/common/perlin/type/impl/ImprovedPerlinNoiseGenerator.java
  op65n.tech.terrain.common.perlin.type.impl.ImprovedPerlinNoiseGenerator
 op65n/tech/terrain/common/perlin/type/impl/SimplePerlinNoiseGenerator.java
  op65n.tech.terrain.common.perlin.type.impl.SimplePerlinNoiseGenerator
 op65n/tech/terrain/common/util/Math.java
  op65n.tech.terrain.common.util.Math
-op65n/tech/terrain/common/perlin/type/NoiseGenerator.java
- op65n.tech.terrain.common.perlin.type.NoiseGenerator
+op65n/tech/terrain/common/perlin/type/impl/OriginalPerlinNoiseGenerator.java
+ op65n.tech.terrain.common.perlin.type.impl.OriginalPerlinNoiseGenerator
 op65n/tech/terrain/common/perlin/NoiseType.java
  op65n.tech.terrain.common.perlin.NoiseType
  op65n.tech.terrain.common.perlin.NoiseType$1
+op65n/tech/terrain/common/terrain/TerrainAdjustment.java
+ op65n.tech.terrain.common.terrain.TerrainAdjustment
+ op65n.tech.terrain.common.terrain.TerrainAdjustment$AdditionType
+ op65n.tech.terrain.common.terrain.TerrainAdjustment$AdjustmentBuilder
 op65n/tech/terrain/common/terrain/noise/NoiseCalculation.java
  op65n.tech.terrain.common.terrain.noise.NoiseCalculation
  op65n.tech.terrain.common.terrain.noise.NoiseCalculation$1
