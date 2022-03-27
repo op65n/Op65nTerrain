@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group "op65n.tech.terrain"
+version "1.0.0-PreAlpha"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}

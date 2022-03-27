@@ -1,7 +1,0 @@
-name: TerrainGenerator
-version: "0.0.1-PreAlpha"
-main: op65n.tech.terrain.bukkit.TerrainGenerator
-api-version: 1.16
-load: STARTUP
-authors: [ Frcsty ]
-website: https://op65n.tech

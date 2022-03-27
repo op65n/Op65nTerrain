@@ -1,6 +1,5 @@
 include (
-		"common",
-		"bukkit"
+        "common",
+        "renderer"
 )
-include 'renderer'
 

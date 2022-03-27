@@ -13,6 +13,6 @@ repositories {
 }
 
 dependencies {
-    compile name: 'jaylib'
     compile project(':common')
+    compile name: "jaylib"
 }
